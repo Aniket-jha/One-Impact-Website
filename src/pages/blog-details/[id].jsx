@@ -64,19 +64,6 @@ const BlogDetailsDark = ({blogDetails,blogs}) => {
   );
 };
 
-export const getStaticPaths = async () =>{
-   const query = '*[_type == "journal"]';
-  const blogs = await client.fetch(query);
-  const paths = blogs.map(blog=>{
-    return{
-      params:{id:blog._id}
-    }
-  })
-  return{
-    paths,
-    fallback:false
-  }
-}
 
 export const getServerSideProps = async ({params}) =>{
 
