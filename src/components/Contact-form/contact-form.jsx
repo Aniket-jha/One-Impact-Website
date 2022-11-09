@@ -22,12 +22,13 @@ const ContactForm = () => {
     }
     return error;
   }
-  const sendMessage = (ms, val, doc) =>
-    new Promise((r) => {
+  const sendMessage = async (ms, val, doc) =>{
+    
       console.log(ms, val);
-      client.create(doc);
+       await axios.post(`${BASE_URL}/api/contact`,doc)
+            router.push('/')
       setTimeout(r, ms);
-    });
+  };
   return (
     <section className="contact section-padding">
       <div className="container">
@@ -57,7 +58,7 @@ const ContactForm = () => {
                   // show message
 
                   messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
+                    "Your Message has been successfully sent. We will contact you soon.";
                   // Reset the values
                   values.name = "";
                   values.email = "";
