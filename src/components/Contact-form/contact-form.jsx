@@ -2,6 +2,8 @@ import React from "react";
 import ContactFromDate from "../../data/sections/form-info.json";
 import { Formik, Form, Field } from "formik";
 import { client } from "../../../lib/client";
+import axios from "axios";
+import { useRouter } from "next/router";
 const CustomFileInputWrapper = ({onClick, fileName}) => {
     return (
         <div>
@@ -13,6 +15,7 @@ const CustomFileInputWrapper = ({onClick, fileName}) => {
 
 const ContactForm = () => {
   const messageRef = React.useRef(null);
+  const router = useRouter()
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -25,9 +28,10 @@ const ContactForm = () => {
   const sendMessage = async (ms, val, doc) =>{
     
       console.log(ms, val);
-       await axios.post(`${BASE_URL}/api/contact`,doc)
+      console.log(process.env.NEXT_PUBLIC_BASE_URL)
+       await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/contact`,doc)
             router.push('/')
-      setTimeout(r, ms);
+    
   };
   return (
     <section className="contact section-padding">
