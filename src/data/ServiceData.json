@@ -1,0 +1,32 @@
+
+
+[
+    {
+        "id": 1,
+        "title": {"first": "Digital ", "second": "Marketing"},
+        "image": "/img/services/digitalmarketing.jpg",
+        "sub": "Design",
+        "explore":"/services/digitalMarketingDetails"
+    },
+    {
+      "id": 2,
+      "title": { "first": "Content &", "second": "Creative Outreach" },
+      "image": "/img/services/content.jpg",
+      "sub": "Design",
+       "explore":"/services/contentDetails"
+    },
+    {
+      "id": 3,
+      "title": { "first": "Branding &", "second": "Strategy" },
+      "image": "/img/services/branding.jpg",
+      "sub": "Design",
+       "explore":"/services/brandingDetails"
+    },
+    {
+      "id": 4,
+      "title": { "first": "Design", "second": "" },
+      "image": "/img/services/design.jpg",
+      "sub": "Design",
+       "explore":"/services/designDetails"
+    }
+]
