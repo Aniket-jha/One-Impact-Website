@@ -1,6 +1,6 @@
 
 
-import { client } from '../../../utils/client'
+import { client } from '../../../../lib/client'
 
 
 
