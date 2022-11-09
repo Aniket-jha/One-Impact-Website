@@ -58,7 +58,7 @@ const ContactForm = () => {
                   // show message
 
                   messageRef.current.innerText =
-                    "Your Message has been successfully sent. We will contact you soon.";
+                    "Your Message has been successfully sent. We  will contact you asap.";
                   // Reset the values
                   values.name = "";
                   values.email = "";
