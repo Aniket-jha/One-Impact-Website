@@ -46,7 +46,7 @@ const BlogGridDark = ({blogs}) => {
 };
 
 export const getServerSideProps = async ()=>{
-  const query = '*[_type == "journal"]';
+  const query = '*[_type == "journal"] | order(releaseDate desc) | order(_createdAt desc)';
   const blogs = await client.fetch(query);
   
    return {
