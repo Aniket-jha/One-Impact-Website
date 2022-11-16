@@ -54,6 +54,30 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">About</a>
               </Link>
             </li>
+              <li className="nav-item dropdown" onClick={handleDropdown}>
+              <span
+                className="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Work
+              </span>
+              <div className="dropdown-menu">
+               
+                <Link href={`/work/statics`}>
+                  <a className="dropdown-item">Statics</a>
+                </Link>
+                <Link href={`/work/reels`}>
+                  <a className="dropdown-item">Reels</a>
+                </Link>
+                <Link href={`/work/production`}>
+                  <a className="dropdown-item">Production</a>
+                </Link>
+                
+              </div>
+            </li>
             
               <li className="nav-item">
               <Link href={`/services`}>

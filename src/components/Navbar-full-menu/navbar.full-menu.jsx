@@ -65,20 +65,11 @@ const NavbarFullMenu = ({ theme }) => {
                     </div>
                   </li>
                     
-                   <li>
+                  <li>
                     <div className="o-hidden">
-                      <Link href={`/services`}>
-                        <a className="link">
-                          <span className="nm">03.</span>Our Services
-                        </a>
-                      </Link>
-                    </div>
-                  </li>
-                <li>
-                    <div className="o-hidden">
-                      <span className="link ">
-                        <span className="nm">04.</span>Our Work
-                        
+                      <span className="link dmenu">
+                        <span className="nm">03.</span>Our Work
+                        <i className="fas fa-angle-right"></i>
                       </span>
                     </div>
                     <div className="sub-menu">
@@ -92,7 +83,7 @@ const NavbarFullMenu = ({ theme }) => {
                         </li>
                         <li>
                           <div className="o-hidden">
-                            <Link href={`/homepage/home1-dark`}>
+                            <Link href={`/work/statics`}>
                               <a className="sub-link">
                                 <span className="nm">01.</span>Statics
                               </a>
@@ -101,7 +92,7 @@ const NavbarFullMenu = ({ theme }) => {
                         </li>
                         <li>
                           <div className="o-hidden">
-                            <Link href={`/homepage/home2-dark`}>
+                            <Link href={`/work/reels`}>
                               <a className="sub-link">
                                 <span className="nm">02.</span>Reels
                               </a>
@@ -110,17 +101,17 @@ const NavbarFullMenu = ({ theme }) => {
                         </li>
                         <li>
                           <div className="o-hidden">
-                            <Link href={`/homepage/home5-dark`}>
+                            <Link href={`/work/production`}>
                               <a className="sub-link">
                                 <span className="nm">03.</span>Production
                               </a>
                             </Link>
                           </div>
                         </li>
-                       
                       </ul>
                     </div>
                   </li>
+           
               
                   {/* <li>
                     <div className="o-hidden">
