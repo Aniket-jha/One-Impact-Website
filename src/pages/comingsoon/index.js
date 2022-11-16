@@ -16,10 +16,10 @@ const index = ({blogs}) => {
   return (
     <DarkTheme>
     <Navbar/>
-    <section className='section-padding pb-64'>
+    <section className='section-padding pt-64 pb-64'>
    
        <h1 style={{textAlign:"center"}} className='color-font fw-600'>Coming Soon</h1>
-       <h6 style={{textAlign:"center"}} className="fw-200">Work Coming up soon</h6>
+
        </section>
     <Footer blogs={blogs}/>
    </DarkTheme>
