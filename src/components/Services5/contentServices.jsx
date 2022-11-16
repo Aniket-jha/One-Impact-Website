@@ -1,6 +1,7 @@
 import React from "react";
 import featuresData from "../../data/sections/features.json";
 import { contentData, otherData } from "../../data/sections/contentData";
+import Link from "next/link";
 const Services5 = () => {
   return (
     <section className="services box lficon section-padding position-re">
@@ -70,8 +71,9 @@ const Services5 = () => {
         </div>
         <div className="row justify-content-center">
           {otherData.map((item, index) => (
+           <Link href={item.link}>
             <div
-              className="col-lg-6 wow fadeInLeft "
+              className="col-lg-4 wow fadeInLeft "
               data-wow-delay={
                 index == 0
                   ? ".5s"
@@ -83,22 +85,17 @@ const Services5 = () => {
               }
               key={item.id}
             >
-              <div className="item-box no-curve">
+              <div className="item-box2 no-curve">
                 <div>
                   <span className={`icon color-font ${item.icon}`}></span>
                 </div>
                 <div className="cont">
                   <h6>{item.title}</h6>
-                  <ul>
-                    {item.content.map((i) => (
-                      <li style={{ marginTop: "5px", fontSize: "13px",display:"flex",alignItems:"flex-start",justifyContent:"flex-start" }}>
-                        <span style={{ marginRight: "10px" }}> ⚪ </span> {i}
-                      </li>
-                    ))}
-                  </ul>
+                 
                 </div>
               </div>
             </div>
+            </Link>
           ))}
         </div>
       </div>

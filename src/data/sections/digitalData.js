@@ -64,6 +64,7 @@ export const otherData = [
         "id": 1,
         "icon": "pe-7s-paint-bucket",
         "title": "Graphic Design",
+          "link":"/services/designDetails",
         "content": [
             "Presentations",
             "Product Packaging",
@@ -82,6 +83,7 @@ export const otherData = [
          "id": 8,
         "icon": "pe-7s-video",
         "title": "Production",
+          "link":"/services/productionDetails",
         "content": [
             "Video Scripting",
             "Animated Explainer Videos",
@@ -95,6 +97,7 @@ export const otherData = [
          "id": 7,
         "icon": "pe-7s-pen",
         "title": "Content Creation and Marketing",
+          "link":"/services/contentDetails",
         "content": [
             "Copywriting",
             "Blogs",
@@ -111,6 +114,7 @@ export const otherData = [
          "id": 9,
         "icon": "pe-7s-light",
         "title": "Branding and Strategy",
+          "link":"/services/brandingDetails",
         "content": [
             "Brand Key",
             "Brand Guidelines",
@@ -122,6 +126,7 @@ export const otherData = [
          "id": 6,
         "icon": "pe-7s-users",
         "title": "PR",
+          "link":"/services/prDetails",
         "content": [
             "Influencer Management",
             "Digital PR",

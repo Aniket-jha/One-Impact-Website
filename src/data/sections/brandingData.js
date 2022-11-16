@@ -17,6 +17,7 @@ export const otherData = [
         "id": 1,
         "icon": "pe-7s-paint-bucket",
         "title": "Graphic Design",
+        "link":"/services/design",
         "content": [
             "Presentations",
             "Product Packaging",
@@ -35,6 +36,7 @@ export const otherData = [
         "id": 2,
         "icon": "pe-7s-film",
         "title": "Media",
+        "link":"/services/digital",
         "content": [
             "Paid Advertising on Social",
             "Paid Media Strategy & Planning",
@@ -50,6 +52,7 @@ export const otherData = [
         "id": 3,
         "icon": "pe-7s-display1",
         "title": "Social Media",
+        "link":"/services/digitalMarketingDetails",
         "content": [
             "Social Media Platforms Audit",
             "Channel Management",
@@ -61,7 +64,8 @@ export const otherData = [
     {
          "id": 7,
         "icon": "pe-7s-pen",
-        "title": "Content Creation and Marketing",
+        "title": "Content and Creative Outreach",
+         "link":"/services/contentDetails",
         "content": [
             "Copywriting",
             "Blogs",
@@ -75,6 +79,7 @@ export const otherData = [
         "id": 4,
         "icon": "pe-7s-search",
         "title": "SEO",
+        "link":"/services/digitalMarketingDetails",
         "content": [
             "Keyword Research",
             "Competition Research",
@@ -88,6 +93,7 @@ export const otherData = [
          "id": 5,
         "icon": "pe-7s-monitor",
         "title": "Tech",
+        "link":"/services/digitalMarketingDetails",
         "content": [
             "Website Development & Management",
             "Landing Pages",
@@ -100,7 +106,8 @@ export const otherData = [
    {
          "id": 6,
         "icon": "pe-7s-users",
-        "title": "PR",
+        "title": "Public Relations",
+        "link":"/services/prDetails",
         "content": [
             "Influencer Management",
             "Digital PR",
@@ -114,6 +121,7 @@ export const otherData = [
          "id": 8,
         "icon": "pe-7s-video",
         "title": "Production",
+        "link":"/services/productionDetails",
         "content": [
             "Video Scripting",
             "Animated Explainer Videos",

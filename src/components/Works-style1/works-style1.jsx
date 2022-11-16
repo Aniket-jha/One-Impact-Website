@@ -24,8 +24,8 @@ const WorksStyle1 = ({gallery}) => {
               
                   <div
                     className="galleryImage"
-                    data-tooltip-tit="Work image"
-                    data-tooltip-sub="Design"
+                    data-tooltip-tit="Life at One Impact"
+                    data-tooltip-sub="Gallery"
                   >
                     <img src={urlFor(item.galleryImage.asset)} alt="" />
                   </div>

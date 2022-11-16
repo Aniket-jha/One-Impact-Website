@@ -26,6 +26,7 @@ export const otherData = [
         "id": 2,
         "icon": "pe-7s-film",
         "title": "Media",
+          "link":"/services/digitalMarketingDetails",
         "content": [
             "Paid Advertising on Social",
             "Paid Media Strategy & Planning",
@@ -42,6 +43,7 @@ export const otherData = [
         "id": 3,
         "icon": "pe-7s-display1",
         "title": "Social Media",
+         "link":"/services/digitalMarketingDetails",
         "content": [
             "Social Media Platforms Audit",
             "Channel Management",
@@ -54,6 +56,7 @@ export const otherData = [
          "id": 7,
         "icon": "pe-7s-pen",
         "title": "Content Creation and Marketing",
+         "link":"/services/contentDetails",
         "content": [
             "Copywriting",
             "Blogs",
@@ -68,6 +71,7 @@ export const otherData = [
         "id": 4,
         "icon": "pe-7s-search",
         "title": "SEO",
+         "link":"/services/digitalMarketingDetails",
         "content": [
             "Keyword Research",
             "Competition Research",
@@ -81,6 +85,7 @@ export const otherData = [
          "id": 5,
         "icon": "pe-7s-monitor",
         "title": "Tech",
+         "link":"/services/digitalMarketingDetails",
         "content": [
             "Website Development & Management",
             "Landing Pages",
@@ -94,6 +99,7 @@ export const otherData = [
          "id": 6,
         "icon": "pe-7s-users",
         "title": "PR",
+         "link":"/services/prDetails",
         "content": [
             "Influencer Management",
             "Digital PR",
@@ -107,6 +113,7 @@ export const otherData = [
          "id": 8,
         "icon": "pe-7s-video",
         "title": "Production",
+         "link":"/services/productionDetails",
         "content": [
             "Video Scripting",
             "Animated Explainer Videos",
@@ -117,6 +124,7 @@ export const otherData = [
     },  {
          "id": 9,
         "icon": "pe-7s-light",
+         "link":"/services/brandingDetails",
         "title": "Branding and Strategy",
         "content": [
             "Brand Key",

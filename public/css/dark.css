@@ -1588,6 +1588,18 @@ span:hover {
   letter-spacing: 7px;
   margin-bottom: 10px;
 }
+.item-box2{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  padding: 60px 40px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.01)
+}
+.item-box2 div{
+  margin-left: 15px;
+}
 
 .sec-head h3 {
   font-size: 40px;
