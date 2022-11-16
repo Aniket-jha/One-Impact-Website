@@ -74,6 +74,54 @@ const NavbarFullMenu = ({ theme }) => {
                       </Link>
                     </div>
                   </li>
+                <li>
+                    <div className="o-hidden">
+                      <span className="link ">
+                        <span className="nm">04.</span>Our Work
+                        
+                      </span>
+                    </div>
+                    <div className="sub-menu">
+                      <ul>
+                        <li>
+                          <div className="o-hidden">
+                            <span className="sub-link back">
+                              <i className="pe-7s-angle-left"></i> Go Back
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="o-hidden">
+                            <Link href={`/homepage/home1-dark`}>
+                              <a className="sub-link">
+                                <span className="nm">01.</span>Statics
+                              </a>
+                            </Link>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="o-hidden">
+                            <Link href={`/homepage/home2-dark`}>
+                              <a className="sub-link">
+                                <span className="nm">02.</span>Reels
+                              </a>
+                            </Link>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="o-hidden">
+                            <Link href={`/homepage/home5-dark`}>
+                              <a className="sub-link">
+                                <span className="nm">03.</span>Production
+                              </a>
+                            </Link>
+                          </div>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </li>
+              
                   {/* <li>
                     <div className="o-hidden">
                       <span className="link ">
