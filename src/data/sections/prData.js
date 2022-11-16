@@ -1,4 +1,53 @@
-export const digitalData = [
+export const prData = [
+    
+      {
+         "id": 6,
+        "icon": "pe-7s-users",
+        "title": "PR",
+        "content": [
+            "Influencer Management",
+            "Digital PR",
+            "Planning & Selection",
+            "Influencer Campaign Management"
+        ]
+    },
+     
+   
+     
+]
+
+export const otherData = [
+    {
+        "id": 1,
+        "icon": "pe-7s-paint-bucket",
+        "title": "Graphic Design",
+        "content": [
+            "Presentations",
+            "Product Packaging",
+            "Annual Reports",
+            "Social Media Content",
+            "Banners, emailers, UI/UX",
+            "App Design",
+            "Visual Guidelines",
+            "Animated Explainers Video",
+            "Infographics",
+            "Logo Design",
+            "Emailers"
+        ]
+    },
+    {
+         "id": 8,
+        "icon": "pe-7s-video",
+        "title": "Production",
+        "content": [
+            "Video Scripting",
+            "Animated Explainer Videos",
+            "Reels",
+            "Digital Films",
+            "Photoshoots"
+        ]
+    }, 
+    
      {
         "id": 2,
         "icon": "pe-7s-film",
@@ -39,6 +88,21 @@ export const digitalData = [
            
         ]
     },
+       
+    
+    {
+        "id": 3,
+        "icon": "pe-7s-display1",
+        "title": "Social Media",
+        "content": [
+            "Social Media Platforms Audit",
+            "Channel Management",
+            "Social Media Strategy – Platform Specific Approach",
+            "Content Planning for social publishing",
+            "Reporting"
+        ]
+    },
+   
        {
          "id": 5,
         "icon": "pe-7s-monitor",
@@ -52,44 +116,6 @@ export const digitalData = [
 
         ]
     },
-    
-     
-   
-  
-    
-]
-
-export const otherData = [
-    {
-        "id": 1,
-        "icon": "pe-7s-paint-bucket",
-        "title": "Graphic Design",
-        "content": [
-            "Presentations",
-            "Product Packaging",
-            "Annual Reports",
-            "Social Media Content",
-            "Banners, emailers, UI/UX",
-            "App Design",
-            "Visual Guidelines",
-            "Animated Explainers Video",
-            "Infographics",
-            "Logo Design",
-            "Emailers"
-        ]
-    },
-     {
-         "id": 8,
-        "icon": "pe-7s-video",
-        "title": "Production",
-        "content": [
-            "Video Scripting",
-            "Animated Explainer Videos",
-            "Reels",
-            "Digital Films",
-            "Photoshoots"
-        ]
-    }, 
    
     {
          "id": 7,
@@ -116,17 +142,6 @@ export const otherData = [
             "Brand Guidelines",
             "Brand Strategy",
             "Communication Strategy"
-        ]
-    },
-    {
-         "id": 6,
-        "icon": "pe-7s-users",
-        "title": "PR",
-        "content": [
-            "Influencer Management",
-            "Digital PR",
-            "Planning & Selection",
-            "Influencer Campaign Management"
         ]
     },
 ]

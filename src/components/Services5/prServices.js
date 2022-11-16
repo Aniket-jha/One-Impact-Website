@@ -1,7 +1,7 @@
 import React from "react";
 import featuresData from "../../data/sections/features.json";
 
-import { designData, otherData } from "../../data/sections/designData";
+import { prData, otherData } from "../../data/sections/prData";
 const Services5 = () => {
   return (
     <section className="services box lficon section-padding position-re">
@@ -9,30 +9,25 @@ const Services5 = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10">
             <div className="sec-head  text-center">
-              <h3 className="wow color-font">Design</h3>
+              <h3 className="wow color-font">PR</h3>
               <p style={{ marginTop: "15px", textAlign: "justify" }}>
-                With great strategy, you can make great plans, but until the
-                output becomes tangible, you’ll probably stay far behind in
-                achieving your brand objectives. At One Impact,{" "}
+                At the end of the day, how the world perceives a brand has a
+                huge impact on how they flourish. While our hustle mindset
+                ensures we help you meet your brand objectives -
                 <strong className="fw-600">
-                  we design creatives that have a solid visual aesthetic and are
-                  also backed by a strong content strategy.
+                  {" "}
+                  our PR team makes sure you’re visible in the right places and
+                  to the right people.
                 </strong>{" "}
-                Moreover, we are strong believers of experimenting with
-                different techniques,{" "}
-                <strong className="fw-600">
-                  so we eventually arrive at what works best for the brand.
-                </strong>
+                At One Impact, we get you access to exclusively authored
+                articles, features, interviews and much more, all with the
+                passion to help your brand aim for the sky.
               </p>
             </div>
           </div>
         </div>
         <div className="row justify-content-center">
-          <h6 className="fw-300">
-            We can design all this for you and any other requirement you throw
-            at us:
-          </h6>
-          {designData.map((item, index) => (
+          {prData.map((item, index) => (
             <div
               className="col-lg-6 wow fadeInLeft "
               data-wow-delay={

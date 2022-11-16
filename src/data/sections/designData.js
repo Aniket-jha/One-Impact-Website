@@ -37,6 +37,7 @@ export const otherData = [
             
         ]
     },
+    
     {
         "id": 3,
         "icon": "pe-7s-display1",
@@ -92,9 +93,10 @@ export const otherData = [
      {
          "id": 6,
         "icon": "pe-7s-users",
-        "title": "Influencer Marketing",
+        "title": "PR",
         "content": [
             "Influencer Management",
+            "Digital PR",
             "Planning & Selection",
             "Influencer Campaign Management"
         ]

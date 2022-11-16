@@ -28,5 +28,19 @@
       "image": "/img/services/design.jpg",
       "sub": "Design",
        "explore":"/services/designDetails"
+    },
+    {
+      "id": 5,
+      "title": { "first": "PRODUCTION", "second": "" },
+      "image": "/img/services/design.jpg",
+      "sub": "Design",
+       "explore":"/services/productionDetails"
+    },
+    {
+      "id": 6,
+      "title": { "first": "Public", "second": "Relations(PR)" },
+      "image": "/img/services/design.jpg",
+      "sub": "Design",
+       "explore":"/services/prDetails"
     }
 ]

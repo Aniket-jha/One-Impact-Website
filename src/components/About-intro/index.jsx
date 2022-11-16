@@ -19,10 +19,10 @@ const AboutIntro = () => {
                   className="wow txt mb-10 words chars splitting"
                   data-splitting
                 >
-                  {AboutInfo1Data.paragraph1}
+                  We love asking questions and always like to know the ‘whys’ of things. Dissecting briefs and following them to the T is what we do best. We come with an opinion, but first we prefer listening. 
                 </p>
                 <p className="wow txt words chars splitting" data-splitting>
-                  {AboutInfo1Data.paragraph2}
+                  Come meet us at our office to hear some unheard music, have home-like chai (or coffee) and most importantly discuss your marketing goals with us, it’s our first favourite thing to do!
                 </p>
               </Split>
             </div>

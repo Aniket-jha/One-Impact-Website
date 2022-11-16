@@ -22,7 +22,7 @@
       "title": { "first": "Our", "second": "Work" },
       "image": "/img/ourwork.jpg",
       "sub": "Design",
-       "explore":"/comingsoon",
+       "explore":"/work/statics",
        "prev":"life at OI",
         "next":"our service"
     },

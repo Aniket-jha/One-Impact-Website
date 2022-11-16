@@ -9,6 +9,22 @@ const Services5 = () => {
           <div className="col-lg-8 col-md-10">
             <div className="sec-head  text-center">
               <h3 className="wow color-font">CONTENT & CREATIVE OUTREACH</h3>
+              <p style={{ marginTop: "15px", textAlign: "justify" }}>
+                In the sea of briefs we encounter daily, our eyes are always
+                looking for the creative fishes. You throw a mundane problem at
+                us, and we bounce it back with{" "}
+                <strong className="fw-600">
+                  creative, enriching and out-of-the box strategies.
+                </strong>{" "}
+                A fair warning, our ideas might blow your minds.
+                <strong className="fw-600">
+                  {" "}
+                  From planning monthly social media calendars, to writing
+                  scripts and telling stories -
+                </strong>{" "}
+                we do it all with the objective of bringing quality reach and
+                visibility to your brand.
+              </p>
             </div>
           </div>
         </div>
@@ -35,8 +51,8 @@ const Services5 = () => {
                   <h6>{item.title}</h6>
                   <ul>
                     {item.content.map((i) => (
-                      <li style={{ marginTop: "5px", fontSize: "15px" }}>
-                        {i}
+                      <li style={{ marginTop: "5px", fontSize: "13px" }}>
+                        <span style={{ marginRight: "10px" }}> ⚪ </span> {i}
                       </li>
                     ))}
                   </ul>
@@ -75,8 +91,8 @@ const Services5 = () => {
                   <h6>{item.title}</h6>
                   <ul>
                     {item.content.map((i) => (
-                      <li style={{ marginTop: "5px", fontSize: "15px" }}>
-                        {i}
+                      <li style={{ marginTop: "5px", fontSize: "13px" }}>
+                        <span style={{ marginRight: "10px" }}> ⚪ </span> {i}
                       </li>
                     ))}
                   </ul>
