@@ -12,7 +12,7 @@ const WorksStyle1 = ({gallery}) => {
   }, []);
   return (
     <section className="works section-padding pt-30 pb-30">
-      <h2 style={{textAlign:"center",marginBottom:"35px"}}>Our Gallery</h2>
+      <h2 style={{textAlign:"center",marginBottom:"35px"}}>Life at One Impact</h2>
       <div className="container">
        <ResponsiveMasonry
                 columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}

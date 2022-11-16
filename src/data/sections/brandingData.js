@@ -2,7 +2,7 @@ export const brandingData = [
      {
          "id": 9,
         "icon": "pe-7s-light",
-        "title": "Branding and Strategy",
+        "title": "What are we really talking about:",
         "content": [
             "Brand Key",
             "Brand Guidelines",

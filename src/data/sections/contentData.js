@@ -3,7 +3,7 @@ export const contentData = [
     {
          "id": 7,
         "icon": "pe-7s-pen",
-        "title": "Content Creation and Marketing",
+        "title": "What we cover under this:",
         "content": [
             "Copywriting",
             "Blogs",

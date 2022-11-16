@@ -28,10 +28,6 @@ const Services5 = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <h6 className="fw-300">
-            We can design all this for you and any other requirement you throw
-            at us:
-          </h6>
           {designData.map((item, index) => (
             <div
               className="col-lg-6 wow fadeInLeft "
@@ -54,7 +50,15 @@ const Services5 = () => {
                   <h6>{item.title}</h6>
                   <ul>
                     {item.content.map((i) => (
-                      <li style={{ marginTop: "5px", fontSize: "13px" }}>
+                      <li
+                        style={{
+                          marginTop: "5px",
+                          fontSize: "13px",
+                          display: "flex",
+                          alignItems: "flex-start",
+                          justifyContent: "flex-start",
+                        }}
+                      >
                         <span style={{ marginRight: "10px" }}> ⚪ </span> {i}
                       </li>
                     ))}
@@ -94,7 +98,15 @@ const Services5 = () => {
                   <h6>{item.title}</h6>
                   <ul>
                     {item.content.map((i) => (
-                      <li style={{ marginTop: "5px", fontSize: "13px" }}>
+                      <li
+                        style={{
+                          marginTop: "5px",
+                          fontSize: "13px",
+                          display: "flex",
+                          alignItems: "flex-start",
+                          justifyContent: "flex-start",
+                        }}
+                      >
                         <span style={{ marginRight: "10px" }}> ⚪ </span> {i}
                       </li>
                     ))}
