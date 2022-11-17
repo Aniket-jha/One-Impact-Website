@@ -3,6 +3,7 @@ import { Formik, Form, Field } from "formik";
 import { FileInput, ImageInput } from "formik-file-and-image-input/lib";
 import { client } from "../../../lib/client";
 import { useRouter } from 'next/router'
+import axios from "axios";
 const CustomFileInputWrapper = ({onClick, fileName}) => {
     return (
         <div>
@@ -42,15 +43,14 @@ const ContactArch = () => {
           console.log("Image upload error", error);
         });
     }
-  const sendMessage = (ms, val, doc) =>
-    new Promise((r) => {
-      console.log(ms, val);
-      client.create(doc);
-      
-      
-      router.push("/")
-    });
+   const sendMessage = async (ms, val, doc) =>{
     
+      console.log(ms, val);
+      console.log(process.env.NEXT_PUBLIC_BASE_URL)
+      await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/careerContact`,doc)
+      router.push('/')
+    
+  };
   return (
     <section
       id="contact-arch"
@@ -100,7 +100,7 @@ const ContactArch = () => {
                   // show message
 
                   messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
+                    "Your Message has been successfully sent. We will contact you soon.";
                   // Reset the values
                   
                   values.name = "";
@@ -176,7 +176,7 @@ const ContactArch = () => {
                               as="textarea"
                               id="form_message"
                               name="message"
-                              placeholder="Message"
+                              placeholder="Cover Letter"
                               rows="4"
                               required="required"
                             />
