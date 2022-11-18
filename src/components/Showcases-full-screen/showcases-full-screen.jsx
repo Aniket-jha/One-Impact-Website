@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import  useWindowDimensions  from './useWindowDimension';
 import { Swiper, SwiperSlide } from "swiper/react";
 import ShowcassesFullScreenData from "../../data/showcases-full-screen-slider.json";
 import SwiperCore, {
@@ -17,13 +18,17 @@ import removeSlashFromPagination from "../../common/removeSlashpagination";
 
 SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 
+
+
+
 const ShowcasesFullScreen = ({banners}) => {
   const [load, setLoad] = React.useState(true);
    
-   
- 
+  const { width, height } = useWindowDimensions();
+
+ console.log(width)
   React.useEffect(() => {
-   
+
     setTimeout(() => {
       setLoad(false);
     });
@@ -88,8 +93,8 @@ const ShowcasesFullScreen = ({banners}) => {
                 {/* const current = setCurrentSlide(slide.id) */}
              return ( <SwiperSlide  key={slide.id} className="swiper-slide">
                 <div
-                  className="bg-img valign"
-                  style={{ backgroundImage: `url(${slide.image})` }}
+                  className="bg-img   valign"
+                  style={{ backgroundImage: `url(${ width >="500" ? slide.image :  slide.mobileImage  })` }}
                   data-overlay-dark="4"
                 >
                   <div className="container">
