@@ -61,17 +61,13 @@ const WorksDark = ({works,productions,shoots,reels,productionReels,blogs}) => {
 };
 
 export const getServerSideProps = async () => {
-  const query = '*[_type == "allWork"]';
+  const query = '*[_type == "allWork"] | order(releaseDate asc) | order(_createdAt asc)';
   const works = await client.fetch(query);
-
-  const shootsQuery = '*[_type == "shoots"]';
-  const shoots = await client.fetch(shootsQuery)
- 
 
      const blogsQuery = '*[_type == "journal"]';
   const blogs = await client.fetch(blogsQuery);
   return {
-    props: { works,shoots,blogs }
+    props: { works,blogs }
   }
 }
 

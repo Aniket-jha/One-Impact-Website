@@ -22,46 +22,14 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition, works,productions,shoot
         grid ? (grid === 3 ? "three-column" : null) : null
       } portfolio section-padding pb-70`}
     >
-      {!hideFilter && (
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 col-md-10">
-              <div className="sec-head text-center">
-                <h6 className="wow fadeIn" data-wow-delay=".5s">
-                  Statics
-                </h6>
-                <h3 className="wow color-font">
-                  Our Recent Cretives 
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+     
       <div className={"container"}>
         <div className="row">
-          {!hideFilter && (
-            <div
-              className={`filtering ${
-                filterPosition === "center"
-                  ? "text-center"
-                  : filterPosition === "left"
-                  ? "text-left"
-                  : "text-right"
-              } col-12`}
-            >
-              <div className="filter">
-                <span  className="active"  data-filter="*">All</span>
-                 <span     data-filter=".shoots">Shoots</span>
-                <span   data-filter=".cretives">Creatives</span>
-               
-
-              </div>
-            </div>
-          )}
+          
       
           <div className="gallery  full-width">
              {works?.map((work)=>(
+              <Link href={`/caseStudies/${work._id}`}>
             <div
               className={`${
                 grid === 3
@@ -69,7 +37,7 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition, works,productions,shoot
                   : grid === 2
                   ? "col-md-6"
                   : "col-12"
-              } items cretives  wow fadeInUp`}
+              } items   wow fadeInUp`}
               data-wow-delay=".4s"
             >
               <div className="item-img">
@@ -87,36 +55,11 @@ const WorksStyle2 = ({ grid, hideFilter, filterPosition, works,productions,shoot
                 </span>
               </div>
             </div>
+            </Link>
           ))}
     
          
-             {shoots?.map((work)=>(
-            <div
-              className={`${
-                grid === 3
-                  ? "col-lg-3 col-md-6"
-                  : grid === 2
-                  ? "col-md-6"
-                  : "col-12"
-              } items shoots  wow fadeInUp`}
-              data-wow-delay=".4s"
-            >
-              <div className="item-img">
              
-                  <a className="imago wow">
-                    <img src={urlFor(work.mainImage.asset._ref)} alt="image" />
-                    <div className="item-img-overlay"></div>
-                  </a>
-
-              </div>
-              <div className="cont">
-                <h6>{work.title}</h6>
-                <span>
-                  <p>{work.subTitle}</p>
-                </span>
-              </div>
-            </div>
-          ))}
           </div>
           </div>
         </div>
