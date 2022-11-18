@@ -23,7 +23,7 @@
       "id": 3,
       "title": { "first": "Our", "second": "Work" },
       "image": "/img/ourwork.jpg",
-      "mobileImage":"/img/ourwork.jpg",
+      "mobileImage":"/img/workmobile.jpg",
       "sub": "Design",
        "explore":"/comingsoon",
        "prev":"life at OI",
