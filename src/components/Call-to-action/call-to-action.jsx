@@ -13,11 +13,9 @@ const CallToAction = ({img}) => {
             <div className="col-md-8 col-lg-9">
               <div className="content sm-mb30">
                 <Split>
-                  <h6 className="wow words chars splitting" data-splitting>
-                    Let’s Talk
-                  </h6>
+                  
                   <h2 className="wow words chars splitting" data-splitting>
-                    about how we can <br /> <b className="back-color">help you</b>
+                   Let's Talk about how  <br /> <b className="back-color">we can help you</b>
                     
                   </h2>
                 </Split>

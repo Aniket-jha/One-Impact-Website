@@ -26,7 +26,7 @@ const Clients3 = () => {
               <div className="">
                 <a href="#0">
                   <img
-                    style={{backgroundColor: "rgba(255,255,255,0.1)", padding:"20px",  borderRadius:"50%",margin:"10px",display:"flex",alignItems:"center",justifyContent:"center"}}
+                    style={{backgroundColor: "rgba(255,255,255,0.0)", padding:"20px",  borderRadius:"50%",margin:"10px",display:"flex",alignItems:"center",justifyContent:"center"}}
                     src={client}
                     alt=""
                     className="front"

@@ -402,10 +402,7 @@ const NavbarFullMenu = ({ theme }) => {
             </div>
             <div className="col-lg-3 col-md-4">
               <div className="cont-info">
-                <div className="item">
-                  <h6>Phone :</h6>
-                  <p>+03 762-2367-723</p>
-                </div>
+                
                 <div className="item">
                   <h6>Address :</h6>
                   <p>

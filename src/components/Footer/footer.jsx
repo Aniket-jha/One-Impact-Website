@@ -30,13 +30,7 @@ const Footer = ({ hideBGCOLOR,blogs }) => {
                     <p>contact@oneimpact.co</p>
                   </div>
                 </li>
-                <li>
-                  <span className="icon pe-7s-call"></span>
-                  <div className="cont">
-                    <h6>Call Us</h6>
-                    <p>+87986451666</p>
-                  </div>
-                </li>
+                
               </ul>
             </div>
           </div>
@@ -109,6 +103,9 @@ const Footer = ({ hideBGCOLOR,blogs }) => {
                 </a>
                 <a target="_blank" href="https://www.instagram.com/oneimpactagency/">
                   <i className="fab fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://www.google.com/search?sxsrf=ALiCzsYgc_hlE3Z8w6jVp6ZdzGP_iizIWw:1664454807276&q=One+Impact&ludocid=3927663868234021664&gsas=1&client=ms-android-samsung-ga-rev1&lsig=AB86z5UaGTNivnb132yBs-KvI_6P&shem=lsse&kgs=29a9d1cde0eabb75&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local">
+                  <i className="far fa-map"></i>
                 </a>
                 
               </div>
