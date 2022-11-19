@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { urlFor } from "../../../lib/client";
 
-const PagesHeader = () => {
+const PagesHeader = ({aboutContent}) => {
+  
   return (
     <header className="pages-header circle-bg valign">
       <div className="container">
@@ -10,22 +12,13 @@ const PagesHeader = () => {
             <div className="cont aboutMargin   mb-50 text-center">
               <h1 className="color-font fw-700">About Us</h1>
               <p className="aboutHeaderContent  text-justify">
-                We are a bunch of hyperactive people who are constantly focused
-                on getting things done. We operate on the much overrated
-                ‘hustle’ mindset, a mixed music playlist that keeps us awake
-                after our second most favourite activity (eating) and a lot of
-                chai, maggi and coffee. Each of us have a personality that’s
-                individual to us, but together we are in sync to bring the best
-                output possible. Our creative juices are sometimes too much for
-                people but we know how to control the flow, so fitting into a
-                box or stepping out of it, we are perfectly comfortable with
-                both.
+               {aboutContent.headerContent}
               </p>
             </div>
           </div>
           <div className="col-lg-10">
             <div className="img">
-              <img src="/img/aboutBanner.png" alt="" />
+              <img src={urlFor(aboutContent.bannerImage)} alt="" />
             </div>
           </div>
         </div>

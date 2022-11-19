@@ -1,18 +1,15 @@
 import React from "react";
 import Navbar from "../../components/Navbar/navbar";
-import Services from "../../components/Services/services";
-import VideoWithTestimonials from "../../components/Video-with-testimonials/video-with-testimonials";
-import SkillsCircle from "../../components/Skills-circle/skills-circle";
-import Clients from "../../components/Clients/clients";
+
+
 import CallToAction from "../../components/Call-to-action/call-to-action";
 import Footer from "../../components/Footer/footer";
 import PagesHeader from "../../components/Pages-header";
 import AboutIntro from "../../components/About-intro";
 import DarkTheme from "../../layouts/Dark";
-import Team from "../../components/Team/team";
-import MinimalArea from "../../components/Minimal-Area/minimal-area";
+
 import { client } from "../../../lib/client";
-const About = ({blogs}) => {
+const About = ({blogs,aboutContent}) => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
@@ -35,8 +32,8 @@ const About = ({blogs}) => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} from="about-dark" />
-      <PagesHeader />
-      <AboutIntro />
+      <PagesHeader aboutContent={aboutContent[0]} />
+      <AboutIntro aboutContent={aboutContent[0]} />
       
       
      
@@ -47,12 +44,17 @@ const About = ({blogs}) => {
   );
 };
 
-export const getServerSideProps = async ()=>{
+export const getServerSideProps = async ({res,req})=>{
+ res.setHeader(
+      'Cache-Control',
+      'public, s-maxage=10, stale-while-revalidate=59'
+    )
   const query = '*[_type == "journal"]';
   const blogs = await client.fetch(query);
-  
+  const aboutQuery = '*[_type == "aboutContent"]'
+  const aboutContent = await client.fetch(aboutQuery);
    return {
-    props: { blogs}
+    props: { blogs,aboutContent}
   }
 }
 

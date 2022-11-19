@@ -63,14 +63,14 @@
   outline: none;
   list-style-type: none ;
 }
-.knowMoreButton{
-  background-color: "white";
-   padding:3px 3px;
-    font-size:12px;
-     border-radius:50px;
-      text-align:"center";
-       width:40%;
-        color:"black"
+.knowMoreButton {
+  background-color: white !important;
+  padding: 3px 3px;
+  font-size: 12px;
+  border-radius: 50px;
+  text-align: center !important;
+  width: 40%;
+  color: black !important
 }
 .comingSoonBox{
   display: flex;
@@ -8607,15 +8607,15 @@ footer .item .copy-right p a {
   .cursor-outer{
     display: none !important;
   }
-    .knowMoreButton {
-      background-color: "white";
-      padding: 3px 3px;
-      font-size: 12px;
-      border-radius: 50px;
-      text-align: "center";
-      width: 80%;
-      color: "black"
-    }
+        .knowMoreButton {
+          background-color: white !important;
+          padding: 3px 3px;
+          font-size: 12px;
+          border-radius: 50px;
+          text-align: center !important;
+          width: 80%;
+          color: black !important
+        }
     .cursor-inner {
       display: none !important;
     }
