@@ -8595,6 +8595,12 @@ footer .item .copy-right p a {
 }
 
 @media screen and (max-width: 767px) {
+  .cursor-outer{
+    display: none !important;
+  }
+    .cursor-inner {
+      display: none !important;
+    }
   .slider .txt-botm .swiper-nav-ctrl span {
       font-weight: 500;
       font-size: 12px;

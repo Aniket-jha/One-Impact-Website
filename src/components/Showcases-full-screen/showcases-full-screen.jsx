@@ -9,7 +9,7 @@ import SwiperCore, {
   Parallax,
   Mousewheel,
 } from "swiper";
-
+import { urlFor } from "../../../lib/client";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -23,7 +23,7 @@ SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 
 const ShowcasesFullScreen = ({banners}) => {
   const [load, setLoad] = React.useState(true);
-   
+   console.log(banners)
   const { width, height } = useWindowDimensions();
 
  console.log(width)
@@ -89,12 +89,12 @@ const ShowcasesFullScreen = ({banners}) => {
             className="swiper-wrapper"
             slidesPerView={1}
           >
-            {ShowcassesFullScreenData.map((slide) => {
+            {banners.map((slide) => {
                 {/* const current = setCurrentSlide(slide.id) */}
-             return ( <SwiperSlide  key={slide.id} className="swiper-slide">
+             return ( <SwiperSlide  key={slide._id} className="swiper-slide">
                 <div
                   className="bg-img   valign"
-                  style={{ backgroundImage: `url(${ width >="500" ? slide.image :  slide.mobileImage  })` }}
+                  style={{ backgroundImage: `url(${ width >="500" ? urlFor(slide.largeBannerImage) :  urlFor(slide.smallBannerImage)  })` }}
                   data-overlay-dark="4"
                 >
                   <div className="container">
@@ -103,24 +103,24 @@ const ShowcasesFullScreen = ({banners}) => {
                         <div className="caption">
                           <h1>
                             <Link
-                              href={slide.explore}
+                              href={slide.url}
                             >
                               <a>
                                 <div
                                   className="stroke"
                                   data-swiper-parallax="-2000"
                                 >
-                                  {slide.title.first}
+                                  {slide.bannerNameOne}
                                 </div>
                                 <span data-swiper-parallax="-5000">
-                                  {slide.title.second}
+                                  {slide.bannerNameTwo}
                                 </span>
                               </a>
                             </Link>
                             <div className="bord"></div>
                           </h1>
                            <Link
-                              href={slide.explore}
+                              href={slide.url}
                             >
                           <div className="discover">
                            

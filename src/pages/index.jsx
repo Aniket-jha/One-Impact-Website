@@ -11,7 +11,7 @@ const Home = ({banners}) => {
 };
 
 export const getServerSideProps= async () => {
-  const query = '*[_type == "homeBanners"]';
+  const query = '*[_type == "homeBanners"] | order(releaseDate asc) | order(_createdAt asc)';
   const banners = await client.fetch(query);
 
   return{
