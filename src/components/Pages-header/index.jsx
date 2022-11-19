@@ -7,9 +7,9 @@ const PagesHeader = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <div className="cont mt-100 mb-50 text-center">
+            <div className="cont aboutMargin   mb-50 text-center">
               <h1 className="color-font fw-700">About Us</h1>
-              <p className=" fw-500 text-justify">
+              <p className="aboutHeaderContent  text-justify">
                 We are a bunch of hyperactive people who are constantly focused
                 on getting things done. We operate on the much overrated
                 ‘hustle’ mindset, a mixed music playlist that keeps us awake

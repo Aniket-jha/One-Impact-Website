@@ -119,17 +119,19 @@ const ShowcasesFullScreen = ({banners}) => {
                             </Link>
                             <div className="bord"></div>
                           </h1>
-                          <div className="discover">
-                            <Link
+                           <Link
                               href={slide.explore}
                             >
+                          <div className="discover">
+                           
                               <a>
                                 <span>
                                   Explore  More
                                 </span>
                               </a>
-                            </Link>
+                            
                           </div>
+                          </Link>
                         </div>
                       </div>
                     </div>

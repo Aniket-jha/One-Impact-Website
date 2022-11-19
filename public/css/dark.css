@@ -63,6 +63,18 @@
   outline: none;
   list-style-type: none ;
 }
+.comingSoonBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.comingSoonBox img{
+  width: 400px;
+}
+.aboutMargin{
+  margin-top: 100px !important;
+}
 .front{
   background-color: "white !important";
    padding:20px ;
@@ -1599,6 +1611,9 @@ span:hover {
 }
 .item-box2 div{
   margin-left: 15px;
+}
+.aboutHeaderContent{
+  font-size: 18px !important;
 }
 
 .sec-head h3 {
@@ -8995,6 +9010,12 @@ footer .item .copy-right p a {
 }
 
 @media screen and (max-width: 480px) {
+  .aboutMargin {
+      margin-top: 10px !important;
+    }
+  .aboutHeaderContent {
+      font-size: 12px !important;
+    }
   .hamenu .cont-info {
     display: none;
   }

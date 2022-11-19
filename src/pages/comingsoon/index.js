@@ -17,9 +17,11 @@ const index = ({blogs}) => {
     <DarkTheme>
     <Navbar/>
     <section className='section-padding pt-64 pb-64'>
-   
+    <div className='comingSoonBox'>
+        <img src="/img/comingsoon.png"  alt="" />
+        
        <h1 style={{textAlign:"center"}} className='color-font fw-600'>Coming Soon</h1>
-
+      </div>
        </section>
     <Footer blogs={blogs}/>
    </DarkTheme>
