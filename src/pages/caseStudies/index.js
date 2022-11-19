@@ -1,4 +1,5 @@
 import React from "react";
+import Head from 'next/head'
 import DarkTheme from "../../layouts/Dark";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
@@ -44,6 +45,10 @@ const WorksDark = ({works,productions,shoots,reels,productionReels,blogs}) => {
   console.log(reels)
   return (
     <DarkTheme>
+    <Head>
+        <title>Work</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="circle-bg">
         <div className="circle-color fixed">
           <div className="gradient-circle"></div>

@@ -63,6 +63,15 @@
   outline: none;
   list-style-type: none ;
 }
+.knowMoreButton{
+  background-color: "white";
+   padding:3px 3px;
+    font-size:12px;
+     border-radius:50px;
+      text-align:"center";
+       width:40%;
+        color:"black"
+}
 .comingSoonBox{
   display: flex;
   align-items: center;
@@ -8598,6 +8607,15 @@ footer .item .copy-right p a {
   .cursor-outer{
     display: none !important;
   }
+    .knowMoreButton {
+      background-color: "white";
+      padding: 3px 3px;
+      font-size: 12px;
+      border-radius: 50px;
+      text-align: "center";
+      width: 80%;
+      color: "black"
+    }
     .cursor-inner {
       display: none !important;
     }
@@ -9019,6 +9037,15 @@ footer .item .copy-right p a {
   .aboutMargin {
       margin-top: 10px !important;
     }
+        .knowMoreButton {
+          background-color: white !important;
+          padding: 3px 3px;
+          font-size: 12px;
+          border-radius: 50px;
+          text-align: center !important;
+          width: 80%;
+          color: black !important
+        }
   .aboutHeaderContent {
       font-size: 12px !important;
     }
@@ -9097,6 +9124,7 @@ footer .item .copy-right p a {
   .showcase-carus.circle-slide .caption h1,
   .showcase-carus.circle-slide .copy-cap h1 {
     font-size: 40px;
+    text-align: left;
   }
 
   .works-header .capt h2 {

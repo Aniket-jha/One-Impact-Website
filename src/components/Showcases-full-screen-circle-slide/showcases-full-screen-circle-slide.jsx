@@ -96,7 +96,7 @@ const ShowcasesFullScreenCircleSlide = () => {
                             <a>
                               <div className="stroke">{slide.title.first}</div>
                               <span>{slide.title.second}</span>
-                               <p style={{backgroundColor:"white",padding:"3px 3px",fontSize:"12px",borderRadius:"50px",textAlign:"center",width:"40%",color:"black"}}>Know More</p>
+                               <p className="knowMoreButton" style={{}}>Know More</p>
                             </a>
                           </Link>
                         </h1>
@@ -111,7 +111,7 @@ const ShowcasesFullScreenCircleSlide = () => {
                             <a>
                               <div className="stroke">{slide.title.first}</div>
                               <span>{slide.title.second}</span>
-                              <p style={{backgroundColor:"white",padding:"3px 3px",fontSize:"12px",borderRadius:"50px",textAlign:"center",width:"40%",color:"black"}}>Know More</p>
+                              <p className="knowMoreButton" style={{}}>Know More</p>
                             </a>
                           </Link>
                         </h1>
