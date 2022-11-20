@@ -9,6 +9,10 @@ const Home = ({banners}) => {
     <Head>
         <title>Home</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+  name="description"
+  content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
+/>
       </Head>
       <ShowcaseDark banners={banners}/>
     </>
