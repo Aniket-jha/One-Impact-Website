@@ -138,7 +138,7 @@ const ContactForm = () => {
                 <h5>
                   <a href="#0">contact@oneimpact.co</a>
                 </h5>
-                <h5>{ContactFromDate.phone}</h5>
+                
               </div>
               <h3 className="wow" data-splitting>
                 Visit Us.
