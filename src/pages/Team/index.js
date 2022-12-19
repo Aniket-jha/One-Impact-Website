@@ -8,17 +8,30 @@ import Video2 from "../../components/Video2/video2"
 import Works from '../../components/Works/works';
 import WorksStyle1 from "../../components/Works-style1/works-style1";
 import { client } from '../../../lib/client';
+import Head from 'next/head';
 const index = ({gallery,teamData,seniorsData,blogs }) => {
 
   return (
+    <>
+     <Head>
+        <title>Team</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+  name="description"
+  content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
+/>
+</Head>
    <DarkTheme>
     <NavbarFullMenu/>
    <Video2/>
+
 
     <Team2 seniorsData={seniorsData} teamData={teamData}/>
     <WorksStyle1 gallery={gallery} />
     <Footer blogs={blogs} />
    </DarkTheme>
+
+   </>
   )
 }
 

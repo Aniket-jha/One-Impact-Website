@@ -7,8 +7,10 @@ import Head from "next/head";
 const ShowcaseDark = ({banners}) => {
   console.log(banners)
   return (
-    <>
-    <Head>
+   
+   
+    <DarkTheme>
+       <Head>
         <title>Home</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
@@ -16,12 +18,10 @@ const ShowcaseDark = ({banners}) => {
   content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
 />
       </Head>
-    <DarkTheme>
-  
       <NavbarFullMenu />
       <ShowcasesFullScreen banners={banners} />
     </DarkTheme>
-    </>
+  
   );
 };
 

@@ -6,6 +6,7 @@ import DarkTheme from "../../layouts/Dark";
 import ContactHeader from "../../components/Contact-header/contact-header";
 import ContactForm from "../../components/Contact-form/contact-form";
 import { client } from "../../../lib/client";
+import Head from "next/head";
 const Contact = ({blogs}) => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
@@ -33,6 +34,15 @@ const Contact = ({blogs}) => {
   }, [navbarRef]);
 
   return (
+    <>
+    <Head>
+        <title>Contact - One Impact Agency</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+  name="description"
+  content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
+/>
+</Head>
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
     
@@ -48,6 +58,7 @@ const Contact = ({blogs}) => {
         <Footer blogs={blogs} hideBGCOLOR />
       </div>
     </DarkTheme>
+    </>
   );
 };
 export const getServerSideProps = async ()=>{

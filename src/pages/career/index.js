@@ -10,6 +10,7 @@ import WorksStyle5 from "../../components/Works-style5/works-style5"
 import BlogListed from "../../components/Blog-list/blog-list";
 import Works4 from "../../components/Works4/works4";
 import { client } from "../../../lib/client";
+import Head from 'next/head';
 import Works3 from "../../components/Works3/works3"
 import JobList from '../../components/Jobs/JobList';
 import ContactArch from '../../components/Contact-arch/contact-arch';
@@ -45,6 +46,15 @@ const index = ({career,blogs}) => {
     });
   }, [fixedHeader, MainContent, navbarRef]);
   return (
+      <>
+     <Head>
+        <title>Career - One Impact Agency</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+  name="description"
+  content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
+/>
+</Head>
     <DarkTheme>
       <div className="circle-bg">
         <div className="circle-color fixed">
@@ -60,6 +70,7 @@ const index = ({career,blogs}) => {
         <Footer blogs={blogs} />
       </div>
     </DarkTheme>
+    </>
   )
 }
 

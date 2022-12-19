@@ -11,14 +11,25 @@ import Clients from "../../components/Clients/clients"
 import Clients2 from "../../components/Clients2/clients2"
 import Clients3 from "../../components/Clients3/clients3"
 import { client } from '../../../lib/client';
+import Head from 'next/head';
 const index = ({clients,blogs}) => {
 
   return (
+    <>
+     <Head>
+        <title>Clients - One Impact Agency</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+  name="description"
+  content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
+/>
+</Head>
     <DarkTheme>
     <Navbar/>
         <Clients3 clients={clients} />
     <Footer blogs={blogs}/>
    </DarkTheme>
+   </>
   )
 }
 
