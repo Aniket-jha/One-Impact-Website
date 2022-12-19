@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import appData from "../../data/app.json";
 import initFullNavbarMenu from "../../common/initFullNavbarMenu";
-
+import Image from "next/image"
 const NavbarFullMenu = ({ theme }) => {
   React.useEffect(() => {
     initFullNavbarMenu()
@@ -11,7 +11,7 @@ const NavbarFullMenu = ({ theme }) => {
   return (
     <>
       <div
-        id="navi"
+        id="nav"
         className={`topnav ${theme ? (theme === "light" ? "light" : "") : ""}`}
       >
         <div className="container-fluid">
@@ -19,12 +19,12 @@ const NavbarFullMenu = ({ theme }) => {
             <Link href="/">
               {theme ? (
                 theme === "light" ? (
-                  <img src={appData.darkLogo} alt="logo" />
+                  <Image src={appData.darkLogo} width="90px" height="60px" alt="logo" />
                 ) : (
-                  <img src={appData.lightLogo} alt="logo" />
+                  <Image src={appData.lightLogo} width="90px" height="60px" alt="logo" />
                 )
               ) : (
-                <img src={appData.lightLogo} alt="logo" />
+                <Image src={appData.lightLogo} width="150px" height="50px" alt="logo" />
               )}
             </Link>
           </div>

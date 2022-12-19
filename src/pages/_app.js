@@ -12,6 +12,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>One Impact Agency</title>
         <link rel="icon" href="/img/favicon.ico" />
+         <meta
+  name="description"
+  content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
+/>
       </Head>
       <Cursor />
       <LoadingScreen />
