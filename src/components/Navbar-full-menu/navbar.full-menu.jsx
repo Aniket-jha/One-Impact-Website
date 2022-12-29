@@ -4,6 +4,7 @@ import Link from "next/link";
 import appData from "../../data/app.json";
 import initFullNavbarMenu from "../../common/initFullNavbarMenu";
 import Image from "next/image"
+import NewsletterSubscribe from "../Newsletter/NewsletterSubscribe";
 const NavbarFullMenu = ({ theme }) => {
   React.useEffect(() => {
     initFullNavbarMenu()
@@ -416,6 +417,7 @@ const NavbarFullMenu = ({ theme }) => {
                   </p>
                 </div>
               </div>
+             
             </div>
           </div>
         </div>

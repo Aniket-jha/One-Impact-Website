@@ -32,15 +32,15 @@ const About = ({blogs,aboutContent}) => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} from="about-dark" />
-      {/* <PagesHeader aboutContent={aboutContent[0]} />
+      <PagesHeader aboutContent={aboutContent[0]} />
       <AboutIntro aboutContent={aboutContent[0]} />
       
       
      
   
-      <CallToAction /> */}
-      {/* <Footer blogs={blogs}  /> */}
-    </DarkTheme>
+      <CallToAction /> 
+       <Footer blogs={blogs}  />
+    </DarkTheme> 
   );
 };
 
