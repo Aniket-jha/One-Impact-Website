@@ -416,6 +416,12 @@ const NavbarFullMenu = ({ theme }) => {
                     <a target="_blank" href="mailto:contact@oneimpact.co">contact@oneimpact.co</a>
                   </p>
                 </div>
+                <div className="item">
+                  <h6>Contact No :</h6>
+                  <p>
+                    <a target="_blank" href="mailto:contact@oneimpact.co">+91 90049 77350</a>
+                  </p>
+                </div>
               </div>
              
             </div>

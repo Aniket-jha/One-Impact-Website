@@ -136,7 +136,8 @@ const ContactForm = () => {
               </h3>
               <div className="item mb-40">
                 <h5>
-                  <a href="#0">contact@oneimpact.co</a>
+                  <a href="mailto:contact@oneimpact.co">contact@oneimpact.co</a>
+                  <p>+91 90049 77350</p>
                 </h5>
                 
               </div>
