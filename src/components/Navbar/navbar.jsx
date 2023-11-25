@@ -84,10 +84,15 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Service</a>
               </Link>
             </li>
-              <li className="nav-item">
+              <l className="nav-item">
               <Link href={`/blog`}>
                 <a className="nav-link">Blog</a>
               </Link>
+            </l>
+            <li className="nav-item">
+              <a href="https://cdn.sanity.io/files/p67wd3hf/production/ed39fe3295f3055be3ea05493e969c3baeaa3d36.pdf">
+                <a className="nav-link">Work</a>
+              </a>
             </li>
             <li className="nav-item">
               <Link href={`/contact`}>

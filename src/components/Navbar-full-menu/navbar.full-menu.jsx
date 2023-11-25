@@ -364,11 +364,11 @@ const NavbarFullMenu = ({ theme }) => {
                   </li>
                    <li>
                     <div className="o-hidden">
-                      <Link href={`/blog`}>
+                      <a href="https://cdn.sanity.io/files/p67wd3hf/production/ed39fe3295f3055be3ea05493e969c3baeaa3d36.pdf">
                         <a className="link">
-                          <span className="nm">05.</span>Blog
+                          <span className="nm">05.</span>Work
                         </a>
-                      </Link>
+                      </a>
                     </div>
                   </li>
                   <li>
@@ -394,6 +394,15 @@ const NavbarFullMenu = ({ theme }) => {
                       <Link href={`/Team`}>
                         <a className="link">
                           <span className="nm">08.</span>Team
+                        </a>
+                      </Link>
+                    </div>
+                  </li>
+                     <li>
+                    <div className="o-hidden">
+                      <Link href={`/blog`}>
+                        <a className="link">
+                          <span className="nm">09.</span>Blog
                         </a>
                       </Link>
                     </div>
