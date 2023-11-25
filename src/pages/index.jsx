@@ -13,7 +13,9 @@ const Home = ({banners}) => {
   name="description"
   content="Building 360 degree digital marketing solutions to help your brand achieve that ONE big bang IMPACT! "
 />
+
       </Head>
+      
       <ShowcaseDark banners={banners}/>
     </>
   );
