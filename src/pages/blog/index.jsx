@@ -25,6 +25,7 @@ const BlogGridDark = ({blogs}) => {
         navbar.classList.remove("nav-scroll");
       }
     });
+    initializeGoogleTagManager('G-KVXKVSP4TJ');
   }, [navbarRef]);
   return (
     <DarkTheme>

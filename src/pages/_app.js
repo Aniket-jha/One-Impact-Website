@@ -7,6 +7,7 @@ import LoadingScreen from "../components/Loading-Screen";
 import "../styles/main.scss";
 import { useRouter } from 'next/router'
 function MyApp({ Component, pageProps }) {
+  const router= useRouter()
    useEffect(() => {
     import('react-facebook-pixel')
       .then((x) => x.default)

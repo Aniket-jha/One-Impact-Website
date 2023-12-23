@@ -15,6 +15,7 @@ import Works3 from "../../components/Works3/works3"
 import JobList from '../../components/Jobs/JobList';
 import ContactArch from '../../components/Contact-arch/contact-arch';
 import ContactHeader from '../../components/Works-header/ContactHeader';
+import { initializeGoogleTagManager } from '../googleTagManager';
 const index = ({career,blogs}) => {
      const fixedHeader = React.useRef(null);
   const MainContent = React.useRef(null);
@@ -44,6 +45,7 @@ const index = ({career,blogs}) => {
         navbar.classList.remove("nav-scroll");
       }
     });
+    initializeGoogleTagManager('G-KVXKVSP4TJ');
   }, [fixedHeader, MainContent, navbarRef]);
   return (
       <>
